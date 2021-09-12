@@ -6,6 +6,7 @@ Brief Tutorial on AWS Step Functions
 The overall idea is to chain AWS Lambda functions together where the input of one feeds into another function.
 
 
+### You can invoke the AWS Lambda via a series of commands
 
 
 ## Resources
