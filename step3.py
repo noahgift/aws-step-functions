@@ -1,5 +1,3 @@
-import json
-import boto3
 
 def lambda_handler(event, context):
     
@@ -11,6 +9,6 @@ def lambda_handler(event, context):
             "summary": f"Thank you for the {sentiment} comments. Your Spanish Translation is: {translated_phrase}"
         }
     else:
-        result = {"Improve the quality of your comments to receive a translation"}
+        result = {"summary":"Improve the quality of your comments to receive a translation"}
  
     return result
