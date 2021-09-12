@@ -10,7 +10,7 @@ def lambda_handler(event, context):
         SourceLanguageCode='en',
         TargetLanguageCode='es')
     print(result)   #log this outcome to CloudWatch
-    payload = {"phrase":phrase, "sentiment": sentiment,
+    payload = {"phrase":phrase, "sentiment": sentiment, 
         "translated_phrase":result['TranslatedText']
     }
     return payload

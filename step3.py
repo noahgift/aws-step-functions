@@ -5,12 +5,12 @@ def lambda_handler(event, context):
     
     phrase = event["phrase"]
     sentiment = event["sentiment"]
-    translate = boto3.client("translate")
-    result = translate.translate_text(Text=phrase, 
-        SourceLanguageCode='en',
-        TargetLanguageCode='es')
-    print(result)   #log this outcome to CloudWatch
-    payload = {"phrase":phrase, "sentiment": sentiment, 
-        "translated_phrase":result['TranslatedText']
-    }
-    return payload
+    translated_phrase = event["translated_phrase"]
+    if sentiment == "POSITIVE":
+        result = {
+            "summary": f"Thank you for the {sentiment} comments. Your Spanish Translation is: {translated_phrase}"
+        }
+    else:
+        result = {"Improve the quality of your comments to receive a translation"}
+ 
+    return result
