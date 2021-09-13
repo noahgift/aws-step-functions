@@ -22,6 +22,12 @@ The overall idea is to chain AWS Lambda functions together where the input of on
 
 <img width="1238" alt="cloud-shell" src="https://user-images.githubusercontent.com/58792/133125070-f2ac2bcb-2a57-4eb6-a010-83383b5acc98.png">
 
+#### Execute Step Functions
+
+`aws stepfunctions start-execution --state-machine-arn "arn:aws:states:us-east-1:561744971673:stateMachine:Demo-Customer-Service-System" --input "{\"phrase\" : \"Today is a beautiful day\"}"`
+
+This invokes the step function remotely which is a powerful way to 
+
 #### List AWS Lambdas
 
 
