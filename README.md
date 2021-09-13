@@ -13,12 +13,25 @@ The overall idea is to chain AWS Lambda functions together where the input of on
 
 ![step-function-out](https://user-images.githubusercontent.com/58792/133004976-f30e2821-0236-41eb-bd70-d1876d71cc0c.png)
 
-### You can invoke the AWS Lambda via a series of commands
+### You can invoke the step functions or individual lambdas via the AWS CLI
+
+
+
+#### List AWS Step Functions
+`aws stepfunctions list-state-machines`
+
+<img width="1238" alt="cloud-shell" src="https://user-images.githubusercontent.com/58792/133125070-f2ac2bcb-2a57-4eb6-a010-83383b5acc98.png">
+
+#### List AWS Lambdas
+
+
+
+
 
 
 ## Resources
 
 * [Sample Blank Python Lambda with Cloud Formation](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-python)
 * [Python SAM Lambda](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-python)
-
+* [Step Function Documentation](https://docs.aws.amazon.com/cli/latest/reference/stepfunctions/start-execution.html)
 
