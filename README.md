@@ -35,6 +35,8 @@ This invokes the step function remotely which is a powerful way to do serverless
 
 `aws lambda list-functions`
 
+<img width="1280" alt="Screen Shot 2021-09-13 at 1 05 16 PM" src="https://user-images.githubusercontent.com/58792/133126947-7f7d4e97-3af1-407c-8d84-7dfe193286b9.png">
+
 
 
 ## Resources
