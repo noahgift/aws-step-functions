@@ -33,8 +33,7 @@ This invokes the step function remotely which is a powerful way to do serverless
 
 #### List AWS Lambdas
 
-
-
+`aws lambda list-functions`
 
 
 
