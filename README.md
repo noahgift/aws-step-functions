@@ -26,7 +26,10 @@ The overall idea is to chain AWS Lambda functions together where the input of on
 
 `aws stepfunctions start-execution --state-machine-arn "arn:aws:states:us-east-1:561744971673:stateMachine:Demo-Customer-Service-System" --input "{\"phrase\" : \"Today is a beautiful day\"}"`
 
-This invokes the step function remotely which is a powerful way to 
+This invokes the step function remotely which is a powerful way to do serverless Data Engineering.
+
+<img width="1280" alt="step-functions" src="https://user-images.githubusercontent.com/58792/133126314-35e3eb01-a1dc-4e5f-afa5-6d6381269990.png">
+
 
 #### List AWS Lambdas
 
